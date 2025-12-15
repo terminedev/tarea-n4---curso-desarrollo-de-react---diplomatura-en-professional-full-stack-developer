@@ -1,0 +1,36 @@
+.principal {
+    padding: 1rem 0px;
+
+    font-family: "Vollkorn SC", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+    background: #8e2a9b;
+    background: -webkit-linear-gradient(19deg, rgba(142, 42, 155, 1) 0%, rgba(87, 199, 195, 1) 51%, rgba(83, 237, 204, 1) 100%);
+    background: -moz-linear-gradient(19deg, rgba(142, 42, 155, 1) 0%, rgba(87, 199, 195, 1) 51%, rgba(83, 237, 204, 1) 100%);
+    background: linear-gradient(19deg, rgba(142, 42, 155, 1) 0%, rgba(87, 199, 195, 1) 51%, rgba(83, 237, 204, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8E2A9B", endColorstr="#53EDCC", GradientType=0);
+}
+
+.encabezadoPrincipal {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-style: italic;
+    text-shadow: 3px 3px 0px #000000ae;
+
+    margin: 2rem 0px;
+}
+
+.listaTarjetas {
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: repeat(3, 20rem);
+    gap: 1rem;
+}
