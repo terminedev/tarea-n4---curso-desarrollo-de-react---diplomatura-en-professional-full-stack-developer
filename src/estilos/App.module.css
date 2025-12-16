@@ -1,4 +1,7 @@
 .principal {
+    width: 100%;
+    min-height: 100vh;
+
     padding: 1rem 0px;
 
     font-family: "Vollkorn SC", serif;
@@ -7,7 +10,7 @@
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     flex-direction: column;
 
 
@@ -25,12 +28,32 @@
     text-shadow: 3px 3px 0px #000000ae;
 
     margin: 2rem 0px;
+    text-align: center;
+    font-size: 2rem;
 }
 
 .listaTarjetas {
     list-style: none;
 
     display: grid;
-    grid-template-columns: repeat(3, 20rem);
     gap: 1rem;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 320px) and (max-width: 625px) {
+    .listaTarjetas {
+        grid-template-columns: repeat(1, 18rem);
+    }
+}
+
+@media (min-width: 625px) and (max-width: 1024px) {
+    .listaTarjetas {
+        grid-template-columns: repeat(2, 18rem);
+    }
+}
+
+@media (min-width: 1024px) {
+    .listaTarjetas {
+        grid-template-columns: repeat(3, 18rem);
+    }
 }
